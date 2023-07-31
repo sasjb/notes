@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My protfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="images/Inter-Miami-CF.png" class="logo">
+               <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+               </ul>
+            </nav>
+           <div class="header-text">
+            <p>Web Designer and Problem solver</p>
+            <h1>Hi, This is <span>Abdus Salam</span><br> From Bangladesh.</h1>
+           </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+       <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/salam.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub">About Me</h1>
+                <p>I am Abdus Salam, studying in CSE department at Jahangirnagar University. I am Competitive programmer and solving problem various website,like-codeforces, codechef, atcoder, lightoj etc.
+                    As a programmer , I wanted to go to ICPC world final and represent my University in the world.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experiences')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Educations')">Education</p>
+                </div>
+                <!-- Skills -->
+ <div class="tab-contents active-tab" id="Skills">
+<ul>
+    <li><span>Web Developer</span><br>-Web designing</li>
+    <li><span>Competitive Programming</span><br>-Problems solving<br>-Algorithm</li>
+</ul>
+</div>
+            <!-- experiences -->
+<div class="tab-contents" id="Experiences">
+
+</div>
+          <!-- Education -->
+<div class="tab-contents" id="Educations">
+ <ul>
+    <li><span>2019-Current</span><br>Studying in 3rd year student of CSE Department at Jahangirnagar University<li>
+    <li><span>2018</span><br>HSC From Governmet Azizul Haque College,Bogura</li>
+    <li><span>2016</span><br>SSC From Fulbari G.U. High School .</li>
+
+    </ul>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Protfolio -->
+<div id="protfolio">
+<div class="container">
+    <h1 class="sub-title">My Work-</h1>
+    <div class="work-list">
+        <div class="work">
+            <h3>Codeforces account: </h3>
+            <a href="https://codeforces.com/profile/_sasjb_">Codeforces account</a>
+            <h3>Codechef account: </h3>
+            <a href="https://www.codechef.com/users/sojib2148">Codechef account</a>
+            <h3>Uva account: </h3>
+            <a href="https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=15"> Uva account</a>
+            
+        </div>
+
+         <div class="work">
+            
+        </div>
+
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+<!-- -----------contact------------ -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>salam.stu20182@juniv.edu</p>
+            <p>01706747369</p>
+            <div class="social-icon">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/samia-alam-a99435276/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jucse-29"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-right"></div>
+    </div>
+  </div>  
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+
+</html>
